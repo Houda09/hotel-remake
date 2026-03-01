@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+    background-color: #A42A04;
+    padding: 16px;
+}
+
+nav h4{
+    text-align: center;
+    font-size: 40px;
+    color: white;
+}
+
+nav h5{
+    text-align: center;
+    font-size: large;
+    color: white;
+}
+
+.hero{
+    background-image: url(14\ Guest\ Room\ Must\ Haves.jfif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 490px;
+    position: relative;
+}
+.hero .hero-text{
+    position: absolute;
+    top: 100px;
+    left: 50px;
+}
+
+.hero .hero-text h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 60px;
+    color: #954535;
+}
+
+.hero .hero-text p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #ac0224;
+}
+
+.hero .hero-text button{
+    border-radius: 7px;
+    border: none;
+    background-color: #b82d03;
+    color: white;
+    padding: 15px;
+    width: 150px;
+    transition: all 0.3s ease;
+}
+
+.hero .hero-text button:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(132, 33, 3, 0.25);
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
+    margin-top: 30px;
+}
+
+.about img {
+    width: 320px;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 60% 40% 50% 50% / 40% 60% 40% 60%;
+}
+
+.about h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    color: #954535;
+    margin-bottom: 20px;
+}
+
+.about p{
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-size: large;
+}
+
+.explore h3{
+    text-align: center;
+    margin-bottom: 70px;
+     margin-top: 50px;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.photo-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.photo-item img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.photo-item:hover img {
+    transform: scale(1.05);
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        rgba(132, 33, 3, 0.75),
+        rgba(180, 60, 40, 0.6)
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.photo-item:hover .overlay {
+    opacity: 1;
+}
+
+.overlay p {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.explore h3{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    color: #954535;
+}
+
+.quote{
+    margin-top: 55px;
+    text-align: center;
+    background-color: #A42A04;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 40px;
+    
+}
+
+.invitation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-top: 30px;
+}
+
+.invitation img{
+    width: 350px;
+}
+
+.invitation h3{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    color: #954535;
+    margin-bottom: 20px;
+}
+
+.invitation p{
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-size: large;
+}
+
+footer{
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #A42A04;
+}
+
+footer p{
+    text-align: center;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-size: small;
+    color: white;
+}
